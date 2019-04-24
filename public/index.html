@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat chit</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/awesome.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light">
+		<div class="container">
+			  <a class="navbar-brand" href="#">
+			    <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+			    Ben
+			  </a>
+		</div>
+	</nav>
+	<main class="my-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-10 offset-sm-1">
+					<div class="chat-window mb-2">
+						<div id="output"></div>
+					</div>
+					<input id="handle" type="text" class="chat-field" placeholder="handle">
+					<input id="message" type="text" class="chat-field" placeholder="message">
+					<button id="send" class="btn btn-primary float-right">Send</button>	
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="/chatting.js"></script>
+</body>
+</html>
